@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
@@ -12,120 +13,152 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="chef-vidar.PNG" alt="">
+        <div>
+            <img class="logo" src="chef-vidar.PNG" alt="Logo">
         </div>
-        <div class="intro">
-            <h1>Pasta á la Vidar</h1>
-            <h2>Three very simple, but delicious pasta dishes</h2>
+        <div>
+            <h1>PASTA by Vidar</h1>
+            <h2>Three simple but delicious pasta recipes</h2>
         </div>
     </header>
-    <div class="wrapper">
-        <main>
-            <article id="carbonara" class="hid">
-                <section class="food-img">
-                    <h3>Spaghetti Carbonara</h3>
-                    <img src="carbonara.jpg" alt="">
-                </section>
-                <div>
-                    <section class="ingredients">
-                        <h4>Ingredients</h4>
-                        <ul>
-                            <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Spaghetti</span></li>
-                            <li><span class="amount">200 </span><span class="measurement">g </span><span class="item">Guanciale (or Pancetta)</span></li>
-                            <li><span class="amount">4 </span><span class="measurement"></span><span class="item">whole medium eggs</span></li>
-                            <li><span class="amount">100 </span><span class="measurement">g </span><span class="item">grated Pecorino</span></li>
-                        </ul>
-                    </section>
-                    <section class="howto">
-                        <h4>Preparation</h4>
-                        <ol>
-                            <li>Boil water for the pasta. Add a generous amount of salt to the water.</li>
-                            <li>Cut the Guanciale into small pieces and fry over a medium heat until cooked evenly and a little crispy.</li>
-                            <li>Whisk together the eggs and the Pecorino cheese. Add some coarsely ground pepper to the mix.</li>
-                            <li>Boil your Spaghetti until perfectly "al dente"</li>
-                            <li>Strain your pasta and add to your frying pan with the Guanciale.</li>
-                            <li>Turn off the heat and add your egg and Pecorino mix. Stir until all combined.</li>
-                            <li>Enjoy!</li>
-                        </ol>
-                    </section>    
+    <main>
+        <article class="recipe" id="carbonara">
+            <section class="recipe-name">
+                <h3>Spaghetti Carbonara</h3>
+            </section>
+            <section class="image">
+                <img src="carbonara.jpg" alt="Picture of Spaghetti Carbonara">
+                <div class="fun-fact">
+                    <p>The name Carbonara comes from the word carbonaro, which means “coal burner” in Italian. Some believe the dish was created as a hearty, easy-to-make meal by men working outdoors for long periods.</p>
                 </div>
-            </article>
-            <article id="funghi" class="hide">
-                <section class="food-img">
-                    <h3>Gemelli ai Funghi</h3>
-                    <img src="funghi.jpg" alt="">
-                </section>
-                <div>
-                    <section class="ingredients">
-                        <h4>Ingredients</h4>
-                        <ul>
-                            <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Gemelli</span></li>
-                            <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Porcini mushrooms</span></li>
-                            <li><span class="amount">1 </span><span class="measurement">large </span><span class="item">shallot onion</span></li>
-                            <li><span class="amount">1 </span><span class="measurement"></span><span class="item">garlic clove</span></li>
-                            <li><span class="amount">75 </span><span class="measurement">g </span><span class="item">butter</span></li>
-                            <li><span class="amount">100 </span><span class="measurement">g </span><span class="item">grated Parmeggiano cheese</span></li>
-                        </ul>
-                    </section>
-                    <section class="howto">
-                        <h4>Preparation</h4>
-                        <ol>
-                            <li>Boil water for the pasta. Add a generous amount of salt to the water.</li>
-                            <li>Slice the Porcini mushrooms and fry over medium-high heat in butter</li>
-                            <li>Finely dice the shallot and garlic. In a separate pan fry them together until onion is translucent.</li>
-                            <li>Boil your Gemelli until perfectly "al dente"</li>
-                            <li>Add mushrooms to the onions and also add a few table spoons of pasta water.</li>
-                            <li>Strain your pasta and add to your frying pan with the mushrooms and onion-mix</li>
-                            <li>Turn off the heat and stir until all combined.</li>
-                            <li>Serve with a generous amount of grated Parmeggiano, freshly chopped parsley, and coarsely ground black pepper.</li>
-                            <li>Enjoy!</li>
-                        </ol>
-                    </section>    
+            </section>
+            <section class="basic-info">
+                <span>Serves: <select name="" id="">
+                    <option value="2">2</option>
+                    <option value="4" selected>4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                </select></span>
+                <span><i class="far fa-clock"></i> 20min</span>
+            </section>
+            <section class="ingredients">
+                <ul>
+                    <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Spaghetti</span></li>
+                    <li><span class="amount">200 </span><span class="measurement">g </span><span class="item">Guanciale (or Pancetta)</span></li>
+                    <li><span class="amount">4 </span><span class="measurement"></span><span class="item">whole medium eggs</span></li>
+                    <li><span class="amount">100 </span><span class="measurement">g </span><span class="item">grated Pecorino</span></li>
+                </ul>
+            </section>
+            <section class="how-to">
+                <ol>
+                    <li>Boil water for the pasta. Add a generous amount of salt to the water.</li>
+                    <li>Cut the Guanciale into small pieces and fry over a medium heat until cooked evenly and a little crispy.</li>
+                    <li>Whisk together the eggs and the Pecorino cheese. Add some coarsely ground pepper to the mix.</li>
+                    <li>Boil your Spaghetti until perfectly "al dente"</li>
+                    <li>Strain your pasta and add to your frying pan with the Guanciale.</li>
+                    <li>Turn off the heat and add your egg and Pecorino mix. Stir until all combined.</li>
+                    <li>Enjoy!</li>
+                </ol>
+            </section>
+            <section class="similar">
+                <a href="https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe" target="_blank">Similar recipe</a>
+            </section>
+        </article>
+        <article class="recipe" id="ragu">
+            <section class="recipe-name">
+                <h3>Papardelle al Ragu</h3>
+            </section>
+            <section class="image">
+                <img src="ragu.jpg" alt="Picture of Papardelle al Ragu">
+                <div class="fun-fact">
+                    <p>The word Pappardelle comes from the Italian word pappare, which means "to gobble upp". The pasta shape originates from Tuscany</p>
                 </div>
-            </article>
-            <article id="ragu" class="hide">
-                <section class="food-img">
-                    <h3>Pappardelle al Ragu</h3>
-                    <img src="ragu.jpg" alt="">
-                </section>
-                <div>
-                    <section class="ingredients">
-                        <h4>Ingredients</h4>
-                        <ul>
-                            <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Papardelle</span></li>
-                            <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">chuck (beef)</span></li>
-                            <li><span class="amount">1 </span><span class="measurement"></span><span class="item">carrot</span></li>
-                            <li><span class="amount">1 </span><span class="measurement"></span><span class="item">stick of celery</span></li>
-                            <li><span class="amount">1 </span><span class="measurement"></span><span class="item">garlic clove</span></li>
-                            <li><span class="amount">1 </span><span class="measurement">large </span><span class="item">Shallot onion</span></li>
-                            <li><span class="amount">1 </span><span class="measurement">dl </span><span class="item">red wine</span></li>
-                            <li><span class="amount">1 </span><span class="measurement">dl </span><span class="item">beef stock</span></li>
-                            <li><span class="amount">1 </span><span class="measurement">can </span><span class="item">crushed tomatoes</span></li>
-                        </ul>
-                    </section>
-                    <section class="howto">
-                        <h4>Preparation</h4>
-                        <ol>
-                            <li>Roughly cut the beef chuck into pieces. Fry in oil on high heat until brown</li>
-                            <li>Finely dice the carrots, celery, shallots and garlic. Add to meat and fry until soft</li>
-                            <li>Add red wine, beef stock and crushed tomatoes. Leave to simmer under a lid on low heat for a minumium of two hours</li>
-                            <li>Boil water for the pasta. Add a generous amount of salt to the water.</li>
-                            <li>Boil your Papardelle until perfectly "al dente"</li>
-                            <li>Strain your pasta and add to your pot with the ragu</li>
-                            <li>Turn off the heat and stir until all combined.</li>
-                            <li>Enjoy!</li>
-                        </ol>
-                    </section>    
+            </section>
+            <section class="basic-info">
+                <span>Serves: <select name="" id="">
+                    <option value="2">2</option>
+                    <option value="4" selected>4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                </select></span>
+                <span><i class="far fa-clock"></i> 2.5 hrs</span>
+            </section>
+            <section class="ingredients">
+                <ul>
+                    <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Papardelle</span></li>
+                    <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">chuck (beef)</span></li>
+                    <li><span class="amount">1 </span><span class="measurement"></span><span class="item">carrot</span></li>
+                    <li><span class="amount">1 </span><span class="measurement"></span><span class="item">stick of celery</span></li>
+                    <li><span class="amount">1 </span><span class="measurement"></span><span class="item">garlic clove</span></li>
+                    <li><span class="amount">1 </span><span class="measurement">large </span><span class="item">Shallot onion</span></li>
+                    <li><span class="amount">1 </span><span class="measurement">dl </span><span class="item">red wine</span></li>
+                    <li><span class="amount">1 </span><span class="measurement">dl </span><span class="item">beef stock</span></li>
+                    <li><span class="amount">1 </span><span class="measurement">can </span><span class="item">crushed tomatoes</span></li>
+                </ul>
+            </section>
+            <section class="how-to">
+                <ol>
+                    <li>Roughly cut the beef chuck into pieces. Fry in oil on high heat until brown</li>
+                    <li>Finely dice the carrots, celery, shallots and garlic. Add to meat and fry until soft</li>
+                    <li>Add red wine, beef stock and crushed tomatoes. Leave to simmer under a lid on low heat for a minumium of two hours</li>
+                    <li>Boil water for the pasta. Add a generous amount of salt to the water.</li>
+                    <li>Boil your Papardelle until perfectly "al dente"</li>
+                    <li>Strain your pasta and add to your pot with the ragu</li>
+                    <li>Turn off the heat and stir until all combined.</li>
+                    <li>Enjoy!</li>
+                </ol>
+            </section>
+            <section class="similar">
+                <a href="https://www.lonelyplanet.com/articles/how-to-make-tagliatelle-al-ragu" target="_blank">Similar recipe</a>
+            </section>
+        </article>
+        <article class="recipe" id="funghi">
+            <section class="recipe-name">
+                <h3>Gemelli ai Funghi</h3>
+            </section>
+            <section class="image">
+                <img src="funghi.jpg" alt="Picture of Gemelli ai Fungi">
+                <div class="fun-fact">
+                    <p>The name Gemelli comes from the Italian work for "twins". This is because the shape resembles two tubes twisted around one another. However, it is in fact a single s-shaped strand twisted into a spiral</p>
                 </div>
-            </article>
-        </main>
-        <aside>
-            <button class="next-btn">></button>
-        </aside>
-    </div>
-    <footer></footer>
-    
-    <script src="main.js"></script>
+            </section>
+            <section class="basic-info">
+                <span>Serves: <select name="" id="">
+                    <option value="2">2</option>
+                    <option value="4" selected>4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                </select></span>
+                <span><i class="far fa-clock"></i> 30min</span>
+            </section>
+            <section class="ingredients">
+                <ul>
+                    <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Gemelli</span></li>
+                    <li><span class="amount">350 </span><span class="measurement">g </span><span class="item">Porcini mushrooms</span></li>
+                    <li><span class="amount">1 </span><span class="measurement">large </span><span class="item">shallot onion</span></li>
+                    <li><span class="amount">1 </span><span class="measurement"></span><span class="item">garlic clove</span></li>
+                    <li><span class="amount">75 </span><span class="measurement">g </span><span class="item">butter</span></li>
+                    <li><span class="amount">100 </span><span class="measurement">g </span><span class="item">grated Parmeggiano cheese</span></li>
+                </ul>
+            </section>
+            <section class="how-to">
+                <ol>
+                    <li>Boil water for the pasta. Add a generous amount of salt to the water.</li>
+                    <li>Slice the Porcini mushrooms and fry over medium-high heat in butter</li>
+                    <li>Finely dice the shallot and garlic. In a separate pan fry them together until onion is translucent.</li>
+                    <li>Boil your Gemelli until perfectly "al dente"</li>
+                    <li>Add mushrooms to the onions and also add a few table spoons of pasta water.</li>
+                    <li>Strain your pasta and add to your frying pan with the mushrooms and onion-mix</li>
+                    <li>Turn off the heat and stir until all combined.</li>
+                    <li>Serve with a generous amount of grated Parmeggiano, freshly chopped parsley, and coarsely ground black pepper.</li>
+                    <li>Enjoy!</li>
+                </ol>
+            </section>
+            <section class="similar">
+                <a href="https://www.gustiamo.com/gustiblog/gemelli-with-porcini-mushrooms/" target="_blank">Similar recipe</a>
+            </section>
+        </article>
+    </main>
+
 </body>
 </html>
