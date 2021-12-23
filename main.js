@@ -22,11 +22,6 @@ funghiAmounts.forEach((amount) =>{
     funghiOriginalAmounts.push(parseInt(amount.innerText));
 })
 
-let carbonaraOptions = carbonaraServingsInput.querySelectorAll("option");
-let raguOptions = raguServingsInput.querySelectorAll("option");
-let funghiOptions = funghiServingsInput.querySelectorAll("option");
-
-
 carbonaraServingsInput.addEventListener("change", ()=>{
     if (carbonaraServingsInput.value == 2){
         carbonaraAmounts.forEach((amount, index)=>{
